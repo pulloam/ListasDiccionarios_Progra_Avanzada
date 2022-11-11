@@ -7,18 +7,39 @@ using System.Threading.Tasks;
 namespace ListasDiccionarios {
     class Program {
         static void Main(string[] args) {
-            ListasDiccionarios listaUno = new ListasDiccionarios();
-            ListasDiccionarios diccionarioUno = new ListasDiccionarios();
+            LinqTrabajo listaUno = new LinqTrabajo();
 
-            diccionarioUno.AgregarNombreDiccionario(111, "Juanito");
-            diccionarioUno.AgregarNombreDiccionario(222, "Maria");
-            diccionarioUno.AgregarNombreDiccionario(333, "Pepito");
-            diccionarioUno.AgregarNombreDiccionario(444, "Emilia");
-            diccionarioUno.AgregarNombreDiccionario(555, "Valentina");
+            listaUno.AgregarAlumnos("Juanito", 3.9f);
+            listaUno.AgregarAlumnos("Leo", 5f);
+            listaUno.AgregarAlumnos("Emilia", 5.5f);
+            listaUno.AgregarAlumnos("Paula", 4.4f);
+            listaUno.AgregarAlumnos("Luis", 2.9f);
 
-            diccionarioUno.ObtenerNombresDiccionario();
+            listaUno.AlumnosAprobados();
 
-            diccionarioUno.BuscarNombreDiccionario(555);
+
+            //listaUno.AgregarNombre("Juanito");
+            //listaUno.AgregarNombre("Leo");
+            //listaUno.AgregarNombre("Emilia");
+            //listaUno.AgregarNombre("Luis");
+            //listaUno.AgregarNombre("Pedro");
+            //listaUno.AgregarNombre("Alejandro");
+
+            //listaUno.ElementosPares();
+            //listaUno.BuscarNombres();
+
+
+
+            //ListasDiccionarios diccionarioUno = new ListasDiccionarios();
+            //diccionarioUno.AgregarNombreDiccionario(111, "Juanito");
+            //diccionarioUno.AgregarNombreDiccionario(222, "Maria");
+            //diccionarioUno.AgregarNombreDiccionario(333, "Pepito");
+            //diccionarioUno.AgregarNombreDiccionario(444, "Emilia");
+            //diccionarioUno.AgregarNombreDiccionario(555, "Valentina");
+
+            //diccionarioUno.ObtenerNombresDiccionario();
+
+            //diccionarioUno.BuscarNombreDiccionario(555);
             
             //listaUno.AgregarNombre("Juanito");
             //listaUno.AgregarNombre("Maria");
@@ -35,7 +56,6 @@ namespace ListasDiccionarios {
             //listaUno.ObtenerNombresLista();
 
             Console.ReadKey();
-
         }
     }
 }

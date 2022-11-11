@@ -20,18 +20,14 @@ namespace ListasDiccionarios {
         public void BuscarNombreDiccionario(int llave) {
             string nombre = "";
 
-            diccionarioNombres.TryGetValue(llave, out nombre);
-
             Console.WriteLine("\n------------------------\n");
             Console.WriteLine("Buscando nombre con llave " + llave);
-            if(nombre != null) { 
+            if(diccionarioNombres.TryGetValue(llave, out nombre)) { 
                 Console.WriteLine("Nombre " + nombre);
             } else {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("No existe llave en el diccionario");
             }
-
-
         }
 
         public void EliminarNombre(int indice) {
